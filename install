@@ -148,11 +148,6 @@ do_install()
             curl https://patch-diff.githubusercontent.com/raw/ros/catkin/pull/784.patch | patch -p1 --dir catkin
 	fi
 
- # See: https://github.com/ros/bond_core/pull/37
-    if [ -d bond_core ]; then
-        curl https://patch-diff.githubusercontent.com/raw/ros/bond_core/pull/37.patch | patch -p1 --dir bond_core
-    fi
-
     # See: https://github.com/ros-perception/image_common/pull/85
     if [ -d image_common ]; then
         curl https://patch-diff.githubusercontent.com/raw/ros-perception/image_common/pull/85.patch | patch -p1 --dir image_common
@@ -168,11 +163,6 @@ do_install()
     if [ -d actionlib ]; then
         curl https://patch-diff.githubusercontent.com/raw/ros/actionlib/pull/111.patch | patch -p1 --dir actionlib
         curl https://patch-diff.githubusercontent.com/raw/ros/actionlib/pull/105.patch | patch -p1 --dir actionlib
-    fi
-
-    # See: https://github.com/ros-perception/laser_assembler/pull/16
-    if [ -d laser_assembler ]; then
-        curl https://patch-diff.githubusercontent.com/raw/ros-perception/laser_assembler/pull/16.patch | patch -p1 --dir laser_assembler
     fi
 
     # Package dependencies.
