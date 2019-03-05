@@ -14,7 +14,7 @@ cd ros-install-osx
 
 
 *****************************************************************************************************
-after error do this bellow
+after error do this below
 
 pushd melodic_desktop_full_ws
 
